@@ -55,7 +55,7 @@
         { key: "interestAreas", label: "관심 분야 (복수 응답 가능)", type: "checkbox", required: true,
           options: ["연구개발", "데이터 분석 및 활용", "Physical AI", "AI Factory", "생성형 AI", "HPC 및 AI Simulation", "AI 학습 및 추론", "기타"] },
         { key: "interestProducts", label: "관심 제품 (복수 응답 가능)", type: "checkbox", required: true,
-          options: ["8GPU Server (B200, B300)", "Rack 서버 (GB300, Vera Rubin...)", "IB Switch", "RTX Pro 6000 GPU Server", "해당 없음"] }
+          options: ["8GPU Server (B200, B300)", "Rack 서버 (GB300, Vera Rubin...)", "IB Switch", "RTX Pro 6000 GPU Server", "GDS 스토리지", "WEKA 라이선스", "해당 없음"] }
       ]
     },
     {
@@ -143,7 +143,7 @@
   function topbar(labelText, current, total) {
     var pct = total ? Math.round((current / total) * 100) : 0;
     return '<div class="topbar">' +
-      '<div class="topbar-row"><span class="brand">MKISCORE <span>·</span> HPE Cray AI 2026</span>' +
+      '<div class="topbar-row"><span class="brand">MKISCORE <span>·</span> KSC 2026</span>' +
       (total ? '<span class="step-label">' + escapeHtml(labelText) + " " + current + "/" + total + "</span>" : "") +
       "</div>" +
       (total ? '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' : "") +
