@@ -164,7 +164,7 @@
   function topbar(labelText, current, total) {
     var pct = total ? Math.round((current / total) * 100) : 0;
     return '<div class="topbar">' +
-      '<div class="topbar-row"><span class="brand">MKISCORE <span>·</span> KSC 2026</span>' +
+      '<div class="topbar-row"><span class="brand">MKISCORE &amp; HPE <span>·</span> KSC 2026</span>' +
       (total ? '<span class="step-label">' + escapeHtml(labelText) + " " + current + "/" + total + "</span>" : "") +
       "</div>" +
       (total ? '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' : "") +
